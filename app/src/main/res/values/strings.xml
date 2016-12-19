@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TabApplication</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="encoding">
+
+        <item>.AMR_NB</item>
+        <item>.AMR_WB</item>
+        <item>.MPEG_4</item>
+        <item>.THREE_GPP</item>
+
+    </string-array>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="texte1">Informations</string>
+    <string name="download">Téléchargement terminé</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.romain.tabapplication.TopPaidFragment"
+    android:background="@drawable/background3"
+    android:clickable="false">
+
+    <TextView
+        android:text="Select Format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encoding"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/encoding"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+
+
+</RelativeLayout>

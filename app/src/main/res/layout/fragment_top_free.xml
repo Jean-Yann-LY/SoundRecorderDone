@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.romain.tabapplication.TopFreeFragment"
+    android:background="@drawable/background2">
+
+    <ToggleButton
+        android:id="@+id/playButton"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:background="@drawable/check"
+        android:textOn=""
+        android:textOff=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="startPlayOnClick"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:id="@+id/forwardButton"
+        android:src="@drawable/next_button"
+        android:background="@null"
+        android:onClick="nextOnClick"
+        android:layout_alignTop="@+id/playButton"
+        android:layout_toEndOf="@+id/playButton" />
+
+    <ImageButton
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:id="@+id/backwardButton"
+        android:background="@null"
+        android:src="@drawable/previous_button"
+        android:onClick="previousOnClick"
+        android:layout_alignTop="@+id/playButton"
+        android:layout_toStartOf="@+id/playButton" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/trash"
+        android:background="@null"
+        android:onClick="deleteOnClick"
+        android:layout_marginBottom="35dp"
+        android:layout_alignTop="@+id/forwardButton"
+        android:layout_toEndOf="@+id/forwardButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/button_red_stop"
+        android:background="@null"
+        android:onClick= "stopPlayOnClick"
+        android:layout_marginBottom="35dp"
+        android:layout_alignTop="@+id/backwardButton"
+        android:layout_toStartOf="@+id/backwardButton" />
+
+
+
+
+</RelativeLayout>

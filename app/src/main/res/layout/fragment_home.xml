@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.romain.tabapplication.HomeFragment"
+    android:background="@drawable/background2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButton"
+        android:background="@null"
+        android:src="@drawable/button_red_cancel"
+        android:layout_gravity="left|bottom"
+        android:onClick="cancelRecordOnClick"
+        android:visibility="invisible"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:id="@+id/recordButton"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/check2"
+        android:textOn=""
+        android:textOff=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="startRecordOnClick"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
